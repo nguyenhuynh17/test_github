@@ -46,74 +46,74 @@ public class Topic_7_8_exercise {
 		
 	}
 
-//	@Test
-//	public void TC_01_Handle_textbox_textarea() throws InterruptedException {
-//
-//		driver.get("https://demo.guru99.com/v4");
-//		
-//		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys(usr_name);
-//		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(pass);
-//		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
-//		
-//		Assert.assertEquals("Guru99 Bank Manager HomePage", driver.getTitle().trim());
-//		driver.findElement(By.xpath("//a[contains(text(),'New Customer')]")).click();
-//		
-//		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("automation");
-//		driver.findElement(By.cssSelector("input#dob")).sendKeys("01011990");
-//		driver.findElement(By.xpath("//textarea[@name='addr']")).sendKeys("automation address");
-//		driver.findElement(By.xpath("//input[@name='city']")).sendKeys("automation city");
-//		driver.findElement(By.xpath("//input[@name='state']")).sendKeys("automation state");
-//		driver.findElement(By.xpath("//input[@name='pinno']")).sendKeys("123456");
-//		driver.findElement(By.xpath("//input[@name='telephoneno']")).sendKeys("0123456789");
-//		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys(email_str);
-//		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("autopassword");
-//		
-//		driver.findElement(By.xpath("//input[@value='Submit']")).click();
-//		
-//		Thread.sleep(10000);
-//		
-//		String cust_id = driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Customer ID')]/following-sibling::td")).getText();
-//		
-//		Assert.assertEquals("automation", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Customer Name')]/following-sibling::td")).getText());
-//		Assert.assertEquals("automation address", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Address')]/following-sibling::td")).getText());
-//		Assert.assertEquals("automation city", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'City')]/following-sibling::td")).getText());
-//		Assert.assertEquals("automation state", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'State')]/following-sibling::td")).getText());
-//		Assert.assertEquals("123456", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Pin')]/following-sibling::td")).getText());
-//		Assert.assertEquals("0123456789", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Mobile No.')]/following-sibling::td")).getText());
-//		Assert.assertEquals(email_str, driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Email')]/following-sibling::td")).getText());
-//	
-//		driver.findElement(By.xpath("//a[contains(text(),'Edit Customer')]")).click();
-//		Thread.sleep(10000);
-//		
-//		driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys(cust_id);
-//		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
-//		
-//		Thread.sleep(5000);
-//		
-//		Assert.assertEquals("automation", driver.findElement(By.xpath("//input[@name='name']")).getAttribute("value"));
-//		Assert.assertEquals("automation address", driver.findElement(By.xpath("//textarea[@name='addr']")).getText());
-//		
-//		input_text(driver.findElement(By.xpath("//textarea[@name='addr']")),"edit address");
-//		input_text(driver.findElement(By.xpath("//input[@name='city']")),"edit city");
-//		input_text(driver.findElement(By.xpath("//input[@name='state']")),"edit city");
-//		input_text(driver.findElement(By.xpath("//input[@name='pinno']")),"987654");
-//		input_text(driver.findElement(By.xpath("//input[@name='telephoneno']")),"9876543210");
-//		
-//		driver.findElement(By.xpath("//input[@name='sub']")).click();
-//		
-//		Thread.sleep(10000);
-//		
-//		driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys(cust_id);
-//		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
-//		
-//		Assert.assertEquals(driver.findElement(By.xpath("//textarea[@name='addr']")).getText(), "edit address");
-//		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='city']")).getAttribute("value"),"edit city");
-//		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='state']")).getAttribute("value"),"edit city");
-//		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='pinno']")).getAttribute("value"),"987654");
-//		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='telephoneno']")).getAttribute("value"),"9876543210");
-//		
-//		
-//	}
+	@Test
+	public void TC_01_Handle_textbox_textarea() throws InterruptedException {
+
+		driver.get("https://demo.guru99.com/v4");
+		
+		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys(usr_name);
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(pass);
+		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
+		
+		Assert.assertEquals("Guru99 Bank Manager HomePage", driver.getTitle().trim());
+		driver.findElement(By.xpath("//a[contains(text(),'New Customer')]")).click();
+		
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("automation");
+		driver.findElement(By.cssSelector("input#dob")).sendKeys("01011990");
+		driver.findElement(By.xpath("//textarea[@name='addr']")).sendKeys("automation address");
+		driver.findElement(By.xpath("//input[@name='city']")).sendKeys("automation city");
+		driver.findElement(By.xpath("//input[@name='state']")).sendKeys("automation state");
+		driver.findElement(By.xpath("//input[@name='pinno']")).sendKeys("123456");
+		driver.findElement(By.xpath("//input[@name='telephoneno']")).sendKeys("0123456789");
+		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys(email_str);
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("autopassword");
+		
+		driver.findElement(By.xpath("//input[@value='Submit']")).click();
+		
+		Thread.sleep(10000);
+		
+		String cust_id = driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Customer ID')]/following-sibling::td")).getText();
+		
+		Assert.assertEquals("automation", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Customer Name')]/following-sibling::td")).getText());
+		Assert.assertEquals("automation address", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Address')]/following-sibling::td")).getText());
+		Assert.assertEquals("automation city", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'City')]/following-sibling::td")).getText());
+		Assert.assertEquals("automation state", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'State')]/following-sibling::td")).getText());
+		Assert.assertEquals("123456", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Pin')]/following-sibling::td")).getText());
+		Assert.assertEquals("0123456789", driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Mobile No.')]/following-sibling::td")).getText());
+		Assert.assertEquals(email_str, driver.findElement(By.xpath("//table[@id='customer']//td[contains(text(),'Email')]/following-sibling::td")).getText());
+	
+		driver.findElement(By.xpath("//a[contains(text(),'Edit Customer')]")).click();
+		Thread.sleep(10000);
+		
+		driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys(cust_id);
+		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
+		
+		Thread.sleep(5000);
+		
+		Assert.assertEquals("automation", driver.findElement(By.xpath("//input[@name='name']")).getAttribute("value"));
+		Assert.assertEquals("automation address", driver.findElement(By.xpath("//textarea[@name='addr']")).getText());
+		
+		input_text(driver.findElement(By.xpath("//textarea[@name='addr']")),"edit address");
+		input_text(driver.findElement(By.xpath("//input[@name='city']")),"edit city");
+		input_text(driver.findElement(By.xpath("//input[@name='state']")),"edit city");
+		input_text(driver.findElement(By.xpath("//input[@name='pinno']")),"987654");
+		input_text(driver.findElement(By.xpath("//input[@name='telephoneno']")),"9876543210");
+		
+		driver.findElement(By.xpath("//input[@name='sub']")).click();
+		
+		Thread.sleep(10000);
+		
+		driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys(cust_id);
+		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
+		
+		Assert.assertEquals(driver.findElement(By.xpath("//textarea[@name='addr']")).getText(), "edit address");
+		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='city']")).getAttribute("value"),"edit city");
+		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='state']")).getAttribute("value"),"edit city");
+		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='pinno']")).getAttribute("value"),"987654");
+		Assert.assertEquals(driver.findElement(By.xpath("//input[@name='telephoneno']")).getAttribute("value"),"9876543210");
+		
+		
+	}
 	
 	@Test
 	public void TC_02_Handle_textbox_textarea() throws InterruptedException {
